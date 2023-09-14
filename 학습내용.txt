@@ -95,14 +95,17 @@ https://codepen.io
   $ cd ..   --- 폴더 닫기
   $ cd D    --- Teb키  / 해당 위치에서 머리글이 D인 폴더 보여짐
   $ mkdir 폴더명   --- 폴더 생성
-  $ touch 파일명   --- 파일 생성
+  $ touch 파일명   --- 파일 생성  (.파일명 .파일명  -- 동시 생성)
+  $ code .     ------ vs code 활성화
 
   $ git add .   --- 문자와 . 사이의 공백 유의 (예비저장)
-  $ git commit -m    --- 메시지
+  $ git commit -m  "메시지"    --- 메시지
   $ git push origin master    ---
   $ git remote              --- 로컬저장소와 원격저장소가 연결되어 있는지 확인
 	$ git remote -v    --- 저장소가 있는지 확인
 	$ git remote add origin "github Address"
+
+$ git remote get-url    ---url 확인
 
 윈도우에서 Ms Store open / Ms Terminal 설치
 
