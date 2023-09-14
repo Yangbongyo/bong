@@ -1,0 +1,59 @@
+
+:root{            /*전역변수  */
+    --size: 50px;   /* size = 변수명  */
+    --badge: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.inner{
+    display: flex;
+    width: 1200px;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+}
+.content{
+    display: flex;
+    flex-basis: calc(100% / 4);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image{
+    aspect-ratio: 1/1;
+    overflow: hidden; 
+    position: relative;
+    border-radius: var(--size);
+}
+.badge{
+    /* width: 30px; */
+    /* height: 30px; */
+    padding: 0.5rem 0.3rem;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    left: var(--badge);
+    bottom: var(--badge);
+    display: flex;
+    /* justify-content: center; */
+    /* text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100px; */
+}

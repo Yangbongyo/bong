@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.felx{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    background-color: beige;
+    align-items: flex-end;
+    /* 
+    교차축(수직정렬)에 대한 정리
+    -------------------
+    부모한테 줘야하는 속성
+    -----------------
+    align-items - 한 줄일때 수직정렬하는 속성
+    align-content - 두 줄 이상일때 수직정렬하는 속성
+    ----------------------
+    자식한테 줄 수 있는 속성
+    -------------------------
+    align-self - 부모에서 주어진 align-items와 align-cneter의 통제를 벗어나서 스스로 수직정렬하는 속성
+    ------------------- */
+}
+.felx  div{
+    /* background-color: aquamarine; */
+    flex-grow: 1;
+}
+.stretch{
+    background-color: rgb(175, 53, 114);
+    align-self: stretch;
+}
+.start{
+    background-color: rgb(141, 89, 22);
+    align-self: flex-start;
+}
+.center{
+    background-color: rgb(156, 175, 69);
+    align-self: center;
+}
+.end{
+    background-color: rgb(152, 160, 37);
+    align-self: flex-end;
+}

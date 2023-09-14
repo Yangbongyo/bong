@@ -1,0 +1,62 @@
+/* 기본은 2단 그리드 이미지 기본 비율 1/1
+1024px부터 2/3 폭을 차지 이미지비율 3/2
+1280px 부터는 4단 그리드 2번째는 50%폭 이미지비율 4/3
+1440px 부터는 5단그리드 2번째 3/5폭 이미지 21/9 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 1rem;
+}
+.image{
+    flex-basis: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    /* height: 300px;  */
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* @media (min-width: 1024px){
+    .image{
+        flex-basis: 50%;
+    }
+} */
+@media (min-width: 1024px){
+    .image{
+        flex-basis: calc(100% / 3);
+        aspect-ratio: 3/2;
+    }
+}
+@media (min-width: 1280px){
+    .image{
+        flex-basis: 25%;
+        aspect-ratio: 3/2;
+    }
+    .image:nth-child(2){
+        flex-basis: 50%;
+        aspect-ratio: 3/1;
+    }
+}
+@media (min-width: 1440px){
+    .image{
+        flex-basis: 20%;
+        aspect-ratio: 21/9;
+    }
+    .image:nth-child(2){
+        flex-basis: calc((100% / 5)*3);
+        aspect-ratio: 21/3;
+    }
+    .image:last-child{
+        flex-basis: 100%;
+    }
+}

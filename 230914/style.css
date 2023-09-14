@@ -1,0 +1,88 @@
+:root{
+    --color: rgb(2, 48, 134);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+.content{
+    width: 100%;
+    border: 1px solid rgb(50,50,50);
+    border-radius: 20px;
+    padding: 1rem;
+}
+.content.recommend{
+    border: 1px solid #003e8f;
+}
+.content.recommend .title{
+    color: #003e8f;
+}
+ul{
+    list-style: none;
+}
+.title{
+    font-size: 22px;
+    font-weight: 600;
+}
+.sub-title{
+    font-size: 12px;
+}
+.price{
+    font-size: 32px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    text-align: end;
+}
+span{
+    font-size: 13px;
+}
+.plan{
+    font-size: 12px;
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 18px;
+    color: var(--color);
+    font-weight: 700;
+    border-radius: 10px;
+    border: 1px solid var(--color);
+    background-color: white;
+}
+.btn:hover{
+    background-color: var(--color);
+    color: white;
+} 
+iconify-icon{
+    color: var(--color);
+    font-weight: bold;
+}
+li{
+    display: flex;
+    padding-top: 1rem;
+    align-items: start;
+}
+@media (min-width : 640px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width : 1024px){
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width : 1200px){
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

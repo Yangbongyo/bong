@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* flex-basis: 50%; */
+}
+.item{
+    flex-basis: 50%;
+    overflow: hidden;
+}
+.item img{
+    transition: all 0.5s ease;
+}
+.item:hover img{
+    transform: scale(1.2);
+}
+.theme{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+p{
+    width: 35ch;
+}
+.container.reverse{
+    flex-direction: row-reverse;
+}
+h2{
+    position: relative;
+    overflow: hidden;
+    width: fit-content;  /* contents 영역안에만 기능 적용 */
+}
+h2:hover{
+    color: white;
+}
+h2::before{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: -5;
+    transition: all 0.5s ease;
+    /* rotate: 45deg; */
+    content: '';
+}
+h2:hover::before{
+    bottom: 0;
+    
+}
+h2::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 177, 90);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: -3;
+    transition: all 0.5s ease;
+    content: '';
+}
+h2:hover::after{
+    bottom: 50%;
+}

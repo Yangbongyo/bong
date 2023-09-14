@@ -1,0 +1,33 @@
+h1{
+    position: relative;
+    padding: 0 0.5rem;
+    /* width: fit-content; -- fit값을 부모에나 자식 같은 값 출력 */
+
+}
+h1::before{
+    position: absolute;
+    top: 0;
+    left: -10px;
+    content: '"';
+}
+h1::after{
+    position: absolute;
+    top: 0;
+    /* left: 200px; */
+    width: fit-content;
+    content: '"';
+}
+
+/* 공통요소 묶기 */
+h1::before,
+h1::after{
+    position: absolute;
+    top: 0;
+    content: '"';
+}
+h1::before{
+    left: -10px;
+}
+h1::after{
+    left:100%;  /* fit을 h1에 넣었을때  */
+}

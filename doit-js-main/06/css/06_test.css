@@ -1,0 +1,24 @@
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  } */
+
+#container{
+    position:relative;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    border: 1px solid #333;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow{
+    margin: 0px;
+    z-index:100;
+}
+.arrow:hover{
+    color: red;
+}

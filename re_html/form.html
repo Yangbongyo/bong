@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <form>
+        <fieldset>
+            <legend>로그인</legend>
+            <ul>
+                <li>
+                    <label for="id">아이디:
+                        <input type="text" id="id" size="10">
+                    </label>
+                </li>
+                <li>
+                    <label for="pw">패스워드:
+                        <input type="password" id="pw" size="10"> 
+                    </label>
+                </li>
+            </ul>         
+        </fieldset>
+        
+    </form>
+    <form>
+        <fieldset>
+            <legend>작업내용</legend>
+            <label for="box">선택
+                <input type="checkbox" id="box_1">
+                <input type="checkbox" id="box_2">
+                <input type="checkbox" id="box_3">
+            </label>
+            <label for="pw">패스워드
+                <input type="password" id="pw" size="10">
+            </label>
+        </fieldset>
+        
+    </form>
+    -->
+    <!--
+        텍스트필드와 패스 필드에 사용하는 속성
+        size : 글자수 , value :  보여줄 내용(패스에는 부적합) , maxlength : 최대수 입력값
+    -->
+<!--
+    <h1>회원 가입을 환영합니다</h1>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li>
+                    <label for="userId">아이디:
+                        <input type="text" id="userId">
+                    </label>
+                </li>
+                <li>
+                    <label for="mail">이메일:
+                        <input type="email" id="mail">
+                    </label>
+                </li>
+                <li>
+                    <label for="userPw">비밀번호:
+                        <input type="password" id="userPw">
+                    </label>
+                </li>
+                <li>
+                    <label for="userPw_0">비밀번호 확인:
+                        <input type="password" id="userPw_0">
+                    </label>
+                </li>
+            </ul> 
+        </fieldset>
+    </form>
+    -->
+
+    <form>
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="sale_0">
+                        <input type="checkbox" id="=sale_0">선물용 3kg
+                        <input type="number" min="0" max="5" value="1">개 (최대 5개)
+                    </label>
+                </li>
+                <li>
+                    <label for="sale_1">
+                        <input type="checkbox" id="=sale_1">선물용 5kg
+                        <input type="range" max="3" value="1">개 (최대 3개)
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="dayType">
+                        <input type="date" min="2018-01-01" max="2026-12-31" step="3">
+                        <input type="month" min="2022-01" max="2026-12">
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>배송 정보</legend>
+                <ul>
+                    <li>
+                        <label for="sale">주문 상품
+                            <input type="text" id="sale" value="상품 3kg" readonly> readonly
+                        </label>
+                    </li>
+                    <li>
+                        <label for="name">이름
+                            <input type="text" id="name">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="add">배송 주소
+                            <input type="address" id="add">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="mail">이메일
+                            <input type="email" id="mail">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="po">연락처
+                            <input type="phone" id="po" required> required
+                        </label>
+                    </li>
+                    <li> 배송 지정 (주문일로부터 최소 3일 이후) <br />
+                        <input type="date" min="2023-01-01" max="2025-12-31">
+                    </li>
+                    <li> 
+                        <input type="file"> 
+                    </li>
+                </ul>
+            
+        </fieldset>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+
+    <h1>회원 가입을 환영합니다</h1>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li>
+                    <label for="uid">아이디</label>
+                    <input type="text" id="uid" autofocus placeholder="8~12자를 입력하세요">
+                </li>
+                <li>
+                    <label for="umail">이메일</label>
+                    <input type="email" id="umail" required>
+                </li>
+                <li>
+                    <label for="pw">패스워드</label>
+                    <input type="password" id="pw" placeholder="숫자, 영문, 특수문자 포함 8자 이상">
+                </li>
+                <li>
+                    <label for="pw_0">패스워드 확인</label>
+                    <input type="password" id="pw_0">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+                <div>
+                    <label for="mail_y"> 메일 수신
+                        <input type="radio" id="mail_y"> 
+                    </label>
+                    <label for="mail_n"> 메일 수신 확인
+                        <input type="radio" id="mail_n" checked> 
+                    </label>
+                </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="가입하기">
+            <input type="reset" value="취소">
+        </div>
+    </form>
+</body>
+</html>

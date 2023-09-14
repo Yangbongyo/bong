@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    /* padding: 0.5em; */
+    /* border: 1px solid #ccc; */
+}
+.navi{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #ddd; */
+    /* padding: 0.5em; */
+}
+.navi .logo{
+    /* border: 1px solid #aaa; */
+    padding: 0.5em;
+}
+.navi .btn{
+    /* border: 1px solid #aaa; */
+    padding: 0.5em 1em; 
+}
+.navi .icon{
+    /* border: 1px solid #aaa; */
+    padding: 0.5em;
+}
+#container p{
+
+}
+.navi .btn:hover{
+    background-color: #ccc;
+    color: #333;
+}

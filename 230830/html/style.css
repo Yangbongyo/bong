@@ -1,0 +1,73 @@
+.text{
+  color : green;
+  font-size : 22px;
+  }
+.sub_m{
+  color : blue;
+  font-weight : bold;
+  }
+/* ul li:nth-child(1), ul li:nth-child(3){
+  color : gray;
+  background-color : yellow;
+  font-size : 14px;
+  }
+*/
+ul {
+  border-width : 3px;
+  border-style : solid;
+  border-color : purple;
+  border-radius : 20px;
+  overflow : hidden; 
+  }
+
+ul li:nth-child(2n){
+  background-color : yellow;
+  font-weight : bold;
+  }
+ul li:nth-child(2n-1){
+  background-color : orange;
+  }
+ol li {
+  background-color : #536;
+  }
+
+ol li:nth-child(1){
+  background-color : #000;
+  color : white;
+  }
+
+ol li:last-child{
+  background-color : green;
+  color : white;
+  }
+
+/* 테이블 */
+table {
+   border-collapse : collapse;
+   border : 1px solid #333;
+   }
+table tr {
+
+   border-color : white;
+   }
+table thead {
+   border-bottom : 1px solid #333;
+   }
+table tfoot {
+   border-top : 1px solid #333;
+   }
+table tbody tr:nth-child(odd){
+   background-color : #777;
+   }
+table th, table td {
+   border : 1px solid #333;
+   padding : 10px 20px; 
+   }
+table td:last-child{
+   text-align : right;
+}
+th {
+   text-align : left;
+}
+
+

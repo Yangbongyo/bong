@@ -1,0 +1,112 @@
+8/28
+탐색에서 메모장 열기
+ - windows + R : notepad == Enter
+검색엔진 최적화 : SEO
+
+태그
+<h?>
+<p>
+<strong>
+<!--  //-->
+블럭과 인라인
+
+shift + Alt + F  = Formatting
+
+==============================
+8/29
+ - 파비콘 : 브라우저 제목 앞에 붙는 아이콘
+ - Self closeing 태그 : hr, img  <태그 />
+ - 이미지 태그내에 alt="" 태그 삽입 : 권장사항, 이미지가 나타나지 않을때 대체문자 활용
+
+ - css Style
+   : !important -- 입력시 우선순위를 갖는다
+    ( 속성 :  값 !important; )
+   : 1초 - 1000ms
+
+ - color 속성
+   : 검색 : Hex color
+
+ - 시멘틱 태그 & 자식/자손 관계 확인
+
+=================================
+8/30
+ - 이미지 압축방식 : .webp / .jfif(JPEG File interchange Format)
+ - 
+ - n번째 형태 변경 = :nth-child(1) / :last-child
+ - 여백값 : 상, 우, 하, 좌 / 상, 좌.우, 하 / 상.하, 좌.우
+
+===============================
+8/31
+ - 버튼 태그
+   href="" : 브라우저 상단에서 계속 새로고침 보여짐  | href="#" : 새로고침 안나타남
+ - vscode 정렬 : Alt + Shift +F
+
+======================
+9/5
+Ctrl + D : 같은 속성의 태그를 선택할때 사용 (선택 - 방향키 - 키입력)
+ - flex 기능 : https://webdir.tistory.com/349 (데모 
+ - https://velog.io/@jary/flex%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B0%80%EC%9A%B4%EB%8D%B0-%EC%A0%95%EB%A0%AC
+ - photolate : 인물사진
+
+ - web component : custom tag
+ - https://iconify.design/
+ - 아토믹디자인
+ - https://userinyerface.com/
+ - https://uiverse.io
+
+====================
+9/8
+ - 겹치는 부분에 margin 병합현상 (ex, h - p)
+ - 가상의 자식요소 만드는 방법 : 가상요소 세부항목 content: '  ';
+ - link tree
+
+====================
+9/12
+ - 미디어쿼리 : 위에서 작성한 "속성: 값;"은 상속된다
+
+
+=============================
+9/13
+ - css gradient generator (google 검색)
+ - css gradient stripes generator
+ - scss 활용법 (컴포넌트 개념을 활용하기 위하여)
+  : html연동 -> css파일 사용
+  : vs code 하단의 sass 선택
+
+@import 기능 
+ - 다중 파일 형성하기
+ - 하부 파일 : " _파일명"
+
+https://codepen.io
+
+프로그래머 엿먹이는 방법 : 그리스어 세미콜론(;)
+
+==> 홈페이지 Copy 작업
+  - 자료조사
+  - 와이어프레밍
+  - 색상정보 
+  - 폰트분석
+
+=======================
+9/14
+ - gifhub
+ - 상단 +에서 New repacitory
+  $ ls   ----폴더 찾기
+  $ cd ..   --- 폴더 닫기
+  $ cd D    --- Teb키  / 해당 위치에서 머리글이 D인 폴더 보여짐
+  $ mkdir 폴더명   --- 폴더 생성
+  $ touch 파일명   --- 파일 생성
+
+  $ git add .   --- 문자와 . 사이의 공백 유의 (예비저장)
+  $ git commit -m    --- 메시지
+  $ git push origin master    ---
+  $ git remote              --- 로컬저장소와 원격저장소가 연결되어 있는지 확인
+	$ git remote -v    --- 저장소가 있는지 확인
+	$ git remote add origin "github Address"
+
+윈도우에서 Ms Store open / Ms Terminal 설치
+
+
+
+
+

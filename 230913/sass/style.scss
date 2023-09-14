@@ -1,0 +1,13 @@
+// scss -> css로 변환  -- 컴파일 해야한다
+// 확장탭에서 scss 선택후 Live Sass Compiler 설치
+// 중복되는 기능을 따로 파일에 저장함  _파일명.확장자
+
+$bg : blue;
+@import "card.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}

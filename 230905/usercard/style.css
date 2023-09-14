@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    font-family: 'Abel', sans-serif;
+    background-color: #aaa;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card{
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 상하정렬(height값에 영향) */
+    gap: 0.2em;
+    align-items: center;   /* 좌우정렬 (flex-direction값) */
+    box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    transform: translate(0, 0);
+    transition: all 1s ease;
+}
+.card:hover{
+    transform: translate(0, -20px);
+    transition: all 1s ease;
+}
+
+.avatar{
+    /* 사이즈는 128*128px , 둥글게 , 3px 두께 */
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border: 3px solid #717c11;
+    overflow: hidden;
+}
+
+.card h2{
+    font-size: 20px;
+}
+
+.card p{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+/* button{
+    width: 100px;
+    height: 30px;
+    background-color: bisque;
+    border: 2px solid #333;
+    border-radius: 100px;
+} */
+.card .button{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100px;
+    height: 30px;
+    background-color: bisque;
+    border: 2px solid #333;
+    border-radius: 100px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+.card .button:hover .icon{
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+}
+
+.icon{
+    font-size: 22px;
+    color: red;
+}

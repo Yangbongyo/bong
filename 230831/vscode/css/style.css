@@ -1,0 +1,29 @@
+*{
+
+    
+}
+h1{
+    background-color: bisque;
+    border : 1px solid #eee;
+    padding: 5px;
+}
+
+#btn{
+    width: 200px;
+    height: 50px;
+    border: 1px solid #333;
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+#btn:hover{
+    color: #bf8613;
+    background-color: rgb(80, 57, 31);
+    border-radius: 30px;
+}
+#btn:active{
+    color: blue;
+    background-color: aqua;
+    border-radius: 30px;
+}
