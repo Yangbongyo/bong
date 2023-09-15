@@ -114,6 +114,9 @@ $ git remote get-url    ---url 확인
 
 vs code
  - 단어선택 : ctrl + T
+README.md  -- Enter
+  - md = markdown 
+
 
 
 
