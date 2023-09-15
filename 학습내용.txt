@@ -53,6 +53,7 @@ Ctrl + D : 같은 속성의 태그를 선택할때 사용 (선택 - 방향키 - 
  - 아토믹디자인
  - https://userinyerface.com/
  - https://uiverse.io
+ - https://simpleicons
 
 ====================
 9/8
@@ -94,6 +95,8 @@ https://codepen.io
   $ ls   ----폴더 찾기
   $ cd ..   --- 폴더 닫기
   $ cd D    --- Teb키  / 해당 위치에서 머리글이 D인 폴더 보여짐
+
+<터미널에서 신규 생성하기>
   $ mkdir 폴더명   --- 폴더 생성
   $ touch 파일명   --- 파일 생성  (.파일명 .파일명  -- 동시 생성)
   $ code .     ------ vs code 활성화
@@ -108,6 +111,9 @@ https://codepen.io
 $ git remote get-url    ---url 확인
 
 윈도우에서 Ms Store open / Ms Terminal 설치
+
+vs code
+ - 단어선택 : ctrl + T
 
 
 
