@@ -117,6 +117,11 @@ vs code
 README.md  -- Enter
   - md = markdown 
 
+리엑트를 활용하여 마크다운 문서를 블로그에 연결하는 기능 구현 가능
+
+ - 도형 형태 변형하는 기능
+  (clip path generator 검색)
+
 
 
 
