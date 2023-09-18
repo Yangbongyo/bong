@@ -35,7 +35,7 @@ console.log(dogName);    // '춘향이'
 
 // 고양이 : 보름이, 반달이, 밤이
 // const catName = '보름이';
-// const는 상수이므로 값을 바꿀수 없다
-// catName = '밤이'
-// console.log(catName);
+const는 상수이므로 값을 바꿀수 없다
+catName = '밤이'
+console.log(catName);
 

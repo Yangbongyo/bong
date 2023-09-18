@@ -112,6 +112,15 @@ $ git remote get-url    ---url 확인
 
 github 등록중 오타시 Ctrl + C
 
+hint : Updates were rejected becauwe the remote contains work that you do not
+hint : 
+.
+.
+hint : 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+ ---> 타 pc에서 작업한 내용이 공유되지 않았으므로 'git pull'이 필요하다
+       - 이후 'push'를 해주면 완료됨
+
 윈도우에서 Ms Store open / Ms Terminal 설치
 
 vs code
@@ -123,6 +132,10 @@ README.md  -- Enter
 
  - 도형 형태 변형하는 기능
   (clip path generator 검색)
+
+========================
+9/18
+ - hello, world  ===
 
 
 
