@@ -110,6 +110,8 @@ https://codepen.io
 
 $ git remote get-url    ---url 확인
 
+github 등록중 오타시 Ctrl + C
+
 윈도우에서 Ms Store open / Ms Terminal 설치
 
 vs code
