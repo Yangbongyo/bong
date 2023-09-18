@@ -54,6 +54,7 @@ Ctrl + D : 같은 속성의 태그를 선택할때 사용 (선택 - 방향키 - 
  - https://userinyerface.com/
  - https://uiverse.io
  - https://simpleicons
+ - https://michalsnik.github.io/aos/ (애니메이션 라이브러리)
 
 ====================
 9/8

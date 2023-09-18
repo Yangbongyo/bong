@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="foo\bar"></div>
+    <div id="container">
+        <div class="content">
+            <div class="item">
+                <h2 class="title">Lorem, ipsum.</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum reprehenderit nihil
+                    maiores odio, sunt tenetur necessitatibus laboriosam aliquid corrupti dolorem nisi dolor harum
+                    commodi totam eos consectetur similique laudantium?</p>
+            </div>
+            <figure class="image" data-aos="fade-up">
+                <img src="../../images/animal01.jpg" alt="">
+            </figure>
+        </div>
+        <div class="content">
+            <div class="item">
+                <h2 class="title">Lorem, ipsum.</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum reprehenderit nihil
+                    maiores odio, sunt tenetur necessitatibus laboriosam aliquid corrupti dolorem nisi dolor harum
+                    commodi totam eos consectetur similique laudantium?</p>
+            </div>
+            <!-- data-aos-anchor-placement는 자신의 위치가 어디에 있을때 실행될 것인지 위치를 알려주는 기능 -->
+            <figure class="image" data-aos="fade-up-right" data-aos-anchor-placement="top-bottom">
+                <img src="../../images/animal02.jpg" alt="">
+            </figure>
+        </div>
+        <div class="content">
+            <div class="item">
+                <h2 class="title">Lorem, ipsum.</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum reprehenderit nihil
+                    maiores odio, sunt tenetur necessitatibus laboriosam aliquid corrupti dolorem nisi dolor harum
+                    commodi totam eos consectetur similique laudantium?</p>
+            </div>
+            <figure class="image" data-aos="zoom-in">
+                <img src="../../images/animal03.jpg" alt="">
+            </figure>
+        </div>
+        <div class="content">
+            <div class="item">
+                <h2 class="title">Lorem, ipsum.</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rerum reprehenderit nihil
+                    maiores odio, sunt tenetur necessitatibus laboriosam aliquid corrupti dolorem nisi dolor harum
+                    commodi totam eos consectetur similique laudantium?</p>
+            </div>
+            <figure class="image" data-aos="flip-left">
+                <img src="../../images/coffee03.jpg" alt="">
+            </figure>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // startEvent: 'someCoolEvent',
+            duration: 600,
+            delay: 100
+        } 
+        )
+    </script>
+</body>
+
+</html>
