@@ -14,18 +14,36 @@
     padding: 1rem;
 }
 #list li{
-    background-color: aliceblue;
+    background-color: rgb(192, 184, 116);
     padding: 1rem;
     border-radius: 10px;
+    user-select: none;
+    margin-bottom: 10px;
+}
+#list li.check{
+    background-color: rgb(20, 65, 124);
+    color: white;
+    font-weight: bold;
+}
+#list li:active{
+    background-color: rgb(78, 78, 78);
+    color: white;
 }
 figure{
-    width: 600px;
-    max-width: 100%;
-    height: 500px;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 img{
+    height: 100%;
+}
+figure figcaption{
+    position: absolute;
     width: 100%;
-    height: 450px;
-    object-fit: cover;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    background-color: rgb(116, 72, 19);
+    color: white;
 }

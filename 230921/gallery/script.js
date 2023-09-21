@@ -1,9 +1,9 @@
 const data = [
-    {title: '커피', url: '../../images/coffee01.jpg'},
-    {title: '동물', url: '../../images/animal02.jpg'},
-    {title: '오름', url: '../../images/orum_01.jpg'},
-    {title: '사람', url: '../../images/people01.jpg'},
-    {title: '모카 라떼', url: '../../images/coffee02.jpg'},
+    {title: '커피', url: 'images/coffee01.jpg'},
+    {title: '동물', url: 'images/animal02.jpg'},
+    {title: '오름', url: 'images/orum_01.jpg'},
+    {title: '사람', url: 'images/people01.jpg'},
+    {title: '모카 라떼', url: 'images/coffee02.jpg'},
 ]
 
 // 1. list에 목록
@@ -20,9 +20,16 @@ const images = document.getElementById('image')
 const title = document.getElementById('title')
 
 for(let j = 0; j< buttons.length; j++){
+    buttons[0].classList.add('check')
+    title.textContent = data[0].title
     buttons[j].addEventListener("click", () => {
         // 이미지 속성을 바꾸는 명령 (image.src = 값)
         image.src = `${data[j].url}`
         title.innerText = `${data[j].title}`;
+        for(let i = 0; i < buttons.length; i++){
+            buttons[i].classList.remove('check')
+        }
+        buttons[j].classList.add('check')
     })
 }
+
