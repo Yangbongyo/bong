@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#app{
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#sidebar{
+    background-color: white;
+    max-width: 100%;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    transform: translateX(-300px);
+    transition: all 0.5s ease;
+}
+#sidebar.open{
+    left: 0;
+    transform: translateX(0);
+}
+#trigger{
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    /* opacity: 0; */
+}
+.overlay.open{
+    opacity: 0.7;
+}
