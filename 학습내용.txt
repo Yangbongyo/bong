@@ -142,6 +142,11 @@ README.md  -- Enter
 9/18
  - hello, world  ===
 
+===================
+9/25
+ - 눈송이 내리기
+  : CSS - animation , js- random, setTimeout
+
 
 
 
