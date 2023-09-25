@@ -1,0 +1,62 @@
+:root{
+    --size: 200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html.body{
+    width: 100%;
+    height: 100%;
+    
+}
+body{
+    background-image: url(img/back_01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: none;
+}
+.title{
+    font-size: 120px;
+    letter-spacing: -1px;
+    word-spacing: -10px;
+    line-height: 1;
+
+    color: white;
+    mix-blend-mode: difference;
+    user-select: none; /* 더블 클릭을 못하게 */
+}
+.dot{
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+    /* background-color: black; */
+    position: fixed;
+
+    background-color: white;
+    mix-blend-mode: difference; 
+    transition: all 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);  /* 스크립트 문제로 지연되는 형태 (좌표값 - 과부하)  */
+}
+.bubble{
+    
+    display: block;
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    animation: bubble 200ms forwards linear;
+    background-color: rgb(77, 77, 77);
+    border-radius: var(--size);
+}
+@keyframes bubble{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(2);
+        opacity: 0;
+    }
+}

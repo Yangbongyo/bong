@@ -147,6 +147,29 @@ README.md  -- Enter
  - 눈송이 내리기
   : CSS - animation , js- random, setTimeout
 
+ ** append
+let div = document.createElement("div");
+let p = document.createElement("p");
+div.append(p);
+
+console.log(div.childNodes); // NodeList [ <p> ]
+----------------------------------------------------
+let div = document.createElement("div");
+div.append("Some text");
+
+console.log(div.textContent); // "Some text"
+
+// mix-blend-mode: difference;
+// background-position: center;
+//  background-size: cover;
+//  background-attachment: fixed;
+// user-select:
+
+//  letter-spacing: -1px;
+//  word-spacing: -10px;
+//  line-height: 1;
+
+requestAnimationFrame()
 
 
 
