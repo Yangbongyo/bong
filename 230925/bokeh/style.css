@@ -22,7 +22,7 @@ html, body{
     left: 0;
     filter: blur(4px);
     animation-name: mirror;
-    /* animation-duration: 5s; */
+    animation-duration: 3s;
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
     mix-blend-mode: screen;
