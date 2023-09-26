@@ -66,6 +66,8 @@ themeforest.net  (envato market)  -- 템플릿
 swiperjs.com
 
 wappalyzer (설치파일) : 설치후 상단 바에서 확장프로그램 클릭 / 사이트에 확장프로그램 확인가능
+
+10 30 60 color rule (site 확인)
 ====================
 9/8
  - 겹치는 부분에 margin 병합현상 (ex, h - p)
