@@ -60,6 +60,8 @@ Ctrl + D : 같은 속성의 태그를 선택할때 사용 (선택 - 방향키 - 
 	Webpack / Parcel / Vite
 
 https://www.nextree.co.kr/
+
+ko.javascript.info (자바스크립트 참고 사이트)
 ====================
 9/8
  - 겹치는 부분에 margin 병합현상 (ex, h - p)
