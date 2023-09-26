@@ -1,0 +1,32 @@
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+  .swiper-slide.first{
+    background-color: rgb(116, 184, 184);
+    background-image: url(https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide.second{
+    background-color: rgb(172, 109, 16);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKdfYF-QPaEndsx4dzb6R8jLwer_KHZfscCu7p1tjNHQuAsSDLHrjuFBwpPJtjA8P2fXQ&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-slide.third{
+    background-color: rgb(91, 146, 74);
+    background-image: url(https://thumbs.dreamstime.com/b/bird-over-sunset-3145084.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .swiper-pagination-bullet{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #000;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #000;
+    width: 30px;
+    border-radius: 8px;
+  }

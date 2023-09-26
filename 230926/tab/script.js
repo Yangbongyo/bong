@@ -25,6 +25,7 @@ for(let i = 0; i < tabButton.length; i++){
 tabButton.forEach((button, index) => {
     button.addEventListener('click', () => {
         tabButton.forEach((item, idx) => {
+	// button -> item이 됨(??)
             button.classList.remove('selected')   // 자식요소는 index명을 부여하지 않아도 인지해서 적용됨
             tabItem[idx].classList.remove('show')  // 외부 속성이므로 index명을 명확히 지정해 주어야 한다
         })

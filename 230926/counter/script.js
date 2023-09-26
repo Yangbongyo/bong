@@ -3,6 +3,7 @@ const dataList = document.querySelectorAll('[data-counter')
 
 console.log(dataList)
 
+/*
 // 반목문을 이용해서 dataList안에 있는 data-counter 값을 출력
 // html : data-counter , js : element.dataset.counter
 for (let i = 0; i < dataList.length; i++) {
@@ -20,3 +21,18 @@ for (let i = 0; i < dataList.length; i++) {
     }, 100)
 }
 }  
+*/
+
+// forEach 방식으로 변경
+dataList.forEach(item => {
+    const target = item.dataset.counter   // dataList -> item으로 변경
+    const timerText = item.querySelector('.timer')
+    const step = Math.floor(target / 200);
+    let index = 0;
+    setInterval(() => {
+        if(index < target){
+            index = index + step
+            timerText.textContent = index
+        }
+    }, 100)
+})
