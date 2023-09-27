@@ -68,6 +68,16 @@ swiperjs.com
 wappalyzer (설치파일) : 설치후 상단 바에서 확장프로그램 클릭 / 사이트에 확장프로그램 확인가능
 
 10 30 60 color rule (site 확인)
+
+https://obsidian.md/ (노트 활용)
+
+https://magazinevm.com/%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8-%EB%B2%A4%EC%B9%98%EB%A7%88%ED%82%B9-%EC%82%AC%EC%9D%B4%ED%8A%B8-16%EA%B3%B3-%EA%B5%AD%EB%82%B4-%ED%95%B4%EC%99%B8-%EB%AA%A8%EC%95%84%EB%B3%B4%EA%B8%B0/
+https://www.dbcut.com/ (국내 제작 사이트 모음)
+https://www.behance.net/
+https://dribbble.com/
+https://www.awwwards.com/
+
+https://greensock.com/showcase/ (애니메이션 기능)
 ====================
 9/8
  - 겹치는 부분에 margin 병합현상 (ex, h - p)
