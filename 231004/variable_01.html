@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역변수 테스트</title>
+</head>
+<body>
+    
+    <script>
+        function add(a, b){
+            var sum = a + b;   // 지역변수
+            return sum;
+        }
+        function sub(a, b){
+            var res = a - b;
+        return res;
+        }
+        window.onload = function(){   // window : 
+        var sum = add(4, 5)
+        document.write('add=' + sum + '<br/>')   // 오류
+            var res = sub(10, 4)
+            document.write('sub=' + res)
+        }
+
+        // 지역변수 테스트2
+        // var sum = 0;                // 전역변수
+        // function add(a, b){
+        //     sum = a + b;
+        // }
+        // function sub(){
+        //     sub = sum;
+        // }
+        // window.onload = function(){
+        //     add(4, 5)
+        //     document.write('add=' + sum + '<br/>')
+        //     sub()
+        //     document.write('sub=' + sum)
+        // }
+    </script>
+</body>
+</html>

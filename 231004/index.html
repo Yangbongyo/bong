@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var now = new Date();
+        document.write(now);
+        let year = now.getFullYear();
+        document.write('<br/>' + year);
+
+        let month = now.getMonth();
+        // month = month + 1
+        month = month < 10 ? '0' + month : month
+        document.write('<br/>' + month);
+
+        let date = now.getDate();
+        date = date < 10 ? '0' + date : date
+        document.write('<br/>' + date);
+        document.write('<br/>' + year + '-' + month + '-' + date)
+
+        let isoFormat = now.toISOString()
+        isoFormat = isoFormat.split('T');   // T : 콤마(,)로 영역을 구분해 준다 -- 배열을 형성하게 되는 형태, 삭제를 위해서 배열로 삭제를 해줄수 있다
+        isoFormat = isoFormat[0]
+        document.write('<br/>' + isoFormat)
+    </script>
+</body>
+</html>

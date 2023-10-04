@@ -1,3 +1,18 @@
+공유폴더
+\\192.168.0.78
+
+====
+vs code
+ - 파일 자동 정렬 저장기능
+ - 확장 - prettier
+ - 파일 - 기본설정 - format on save(Editor: Format... (chack)
+  - deitor.default - Default Formatter (?? 설정)
+
+var - 함수 레벨의 스코프
+  - 함수 이외의 문(if, for, while 등)에서 사용하면 전역변수로 활용된다
+let - 블록 레벨의 스코프 : 모든 블록안에서 지역변수로 활용됨
+
+=================
 8/28
 탐색에서 메모장 열기
  - windows + R : notepad == Enter
@@ -133,6 +148,26 @@ https://codepen.io
 
 $ git remote get-url    ---url 확인
 
+<파일/폴더 삭제하기>
+1. 파일 삭제하기
+ - 로컬과 깃 모두 삭제
+  $ git rm file.html
+  $ git commit -m "Delete file"
+ - git에서만 삭제
+  $ git rm --rached file.html
+  $ git commit -m "Delest file"
+
+2. 폴더 삭제하기
+ - 로컬 디렉토리와 git 저장소에서 모두 삭제
+   $ git rm -rf 폴더명
+   $ git commit -m "delete folder"
+
+ - 로컬 디렉토리의 폴더는 유지한 채 git 에서만 폴더 삭제하기
+ bin 폴더는 git 저장소에서 삭제하고자 한다.
+
+   $ git rm --cached -r bin/
+   $ git commit -m "delete folder"
+----------------------------------------------
 github 등록중 오타시 Ctrl + C
 
 hint : Updates were rejected becauwe the remote contains work that you do not
@@ -188,6 +223,20 @@ console.log(div.textContent); // "Some text"
 //  line-height: 1;
 
 requestAnimationFrame()
+===================================
+10/4
+<자바 스크립트의 위치>
+ - 내부 자바스크립트
+ - 외부 자바스크립트
+ - 인라인 자바스크립트
+  ==> 우선 순위가 없이 상황에 따라 대처한다
+  => CSS : 외부 -> 내부 -> 인라인 순으로 적용된다
+
+| -> 파이프
+- -> 하이픈
+& -> amp(엠퍼센트)
+' " -> 쿼테이션
+* -> 아스테리트
 
 
 
