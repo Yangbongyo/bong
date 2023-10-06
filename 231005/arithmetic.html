@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 증감연산자
+    let num = 1;
+    num++;
+
+    console.log(num)
+    num--;  // num = num - 1
+    console.log(num)
+
+    let x = 3;
+    let y = ++x;  // x++의 값을 적용시 console.log : x=4, y=3
+    // ++x + y++
+    console.log(x, y)
+
+    let w = 10;
+    let z = w-- + 5 + --w;      // w : 10(-1)+5+9, z : 24
+    // 10 + 5 = 15, w-- == 9, 15 + 8  --> 계산법
+    console.log("w :  " + w + ", z : " + z)  // w : 8, z : 23
+
+    let k = 5;
+    let l = k++ - 3 + ++k;      // k++ : 5, 5-2+6(1+ ++k) = 8
+    k++
+    console.log("k : " + k + ", l : " + l)      // k = 8, l = 9
+</script>
+</html>

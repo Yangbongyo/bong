@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 객체 리터럴을 이용해서 객체 생성과 동시에 프로퍼티 설정
+
+        // myCar : object
+        // var myCar = {
+        //     model: "bmw",   // key: value
+        //     color: "red", 
+        //     hp: 100;
+        // }
+
+        let temp = {
+            test: "test"
+        }
+        var myCar = {
+            model: "bmw",   // key: value
+            color: "red", 
+            hp: 100,
+            temp: temp,
+        }
+
+        let person = {};            // 2가지 형태는 동일한 구조임
+        // let person2 = new Object();
+
+        // 객체 생성후 프로퍼티 추가 방법1
+        person.age = "20";
+        person.name = "홍길동";
+
+        // 객체 생성후 프로퍼티 추가 방법2
+        person['addr'] = "대전광역시 중구"
+        person['tel'] = "010-6773-3469"
+
+        console.log(person)
+        // 저의 이름은 name 이고 나이는 age이고, 주소는 addr이고 연락처는 tel입니다.
+        document.write("<h5>저의 이름은" + person['name'] + "이고 나이는" + person['age'] + "이고, 주소는" + person['addr'] + "이고 연락처는" + person['tel'] + "입니다. </h3")
+
+        /*
+        console.log(myCar)
+        document.write(myCar.model + "<br/>")  // . : 접근제한자
+        document.write(myCar.color + "<br/>")
+        document.write(myCar.hp + "<br/>")
+        document.write(myCar.temp.test + "<br/>")
+        console.log(Object.keys(myCar))  // Object 객체의 내장 함수 keys('객체')
+        console.log(Object.values(myCar)) // object의 value 값을 배열로 반환
+        console.log(Object.entries(myCar)) // object의 key, value 값을 반환한다
+*/
+
+    </script>
+</body>
+</html>
