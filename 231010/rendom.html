@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Random</title>
+  </head>
+  <body></body>
+  <script>
+    let userInput1 = parseInt(Math.random() * (4 - 1) + 1);
+    let userInput2 = prompt("두번째 값을 입력하세요");
+
+    let str1 = "";
+    let str2 = "";
+    if (userInput1 == 1) {
+      str1 = "가위";
+    } else if (userInput1 == 2) {
+      str1 = "바위";
+    } else {
+      str1 = "보";
+    }
+    if (userInput2 == 1) {
+      str2 = "가위";
+    } else if (userInput2 == 2) {
+      str2 = "바위";
+    } else {
+      str2 = "보";
+    }
+
+    switch (userInput1 - userInput2) {
+      case -2:
+      case 1:
+        document.write("첫번째 사람 : " + str1 + "<br/>");
+        document.write("첫번째 사람 : " + str2 + "<br/><br/>");
+        document.write("결과 : 첫번째 사람 승");
+        break;
+      case -1:
+      case 1:
+        document.write("첫번째 사람 : " + str1 + "<br/>");
+        document.write("첫번째 사람 : " + str2 + "<br/><br/>");
+        document.write("결과 : 두번째 사람 승");
+        break;
+      case 0:
+        document.write("결과 : 잘못된");
+        break;
+    }
+
+    console.log(Math.random() * (3 - 1) + 1);
+  </script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // var grade = prompt("성적을 입력하세요", "A-F사이의 문자로")
+    // switch(grade){
+    //     case'A': alert('잘했어요')
+    //     break
+    //     case'B': alert('좋은 점수군요');
+    //     break
+    //     case'C': alert('괜찮은 점수군요');
+    //     break
+    //     case'D': alert('좀더 노력하세요');
+    //     break
+    //     case'F': alert('다음학기 수강하세요');
+    //     break
+    //     default: alert('알수없는 학점입니다')
+    // }
+
+    /**
+     * 점수를 입력받아 학점을 출력하시오. (switch문 이용)
+     * 점수가 90~100이면 'A'
+     * 점수가 80~90이면 'B'
+     * 점수가 70~80이면 'C'
+     * 점수가 60~69이면 'D'
+     * 점수가 0~59이면 'F'
+    */
+
+   let point = parseInt(prompt('점수를 입력하세요'))
+    // let에서 parseInt를 주게되면 입력이 정수로 된다. 하지만 switch에서 숫자를 나누게 되니 parseInt()를 입력해야 한다
+
+// 점수의 구간을 구분하여 10으로 나누면 정수의 형태를 만들수 있다
+// 100, 90~99, 80~89, 70~79, 60~69, 나머지(Default로 할 수 있음)
+// if(point !== null){
+   switch(parseInt(point / 10)){
+    // case 10 : 
+    // case 9 :
+    case 10 : 
+    document.write('A')
+    break
+    case 9 : 
+    document.write('A')
+    break
+    case 8 : 
+    document.write('B')
+    break
+    case 7 : 
+    document.write('C')
+    break
+    case 6 : 
+    document.write('D')
+    break
+    default: document.write('F')
+   }
+// }
+
+</script>
+</html>
