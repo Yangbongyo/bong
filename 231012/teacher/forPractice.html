@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반복문 연습</title>
+  </head>
+  <body></body>
+  <script>
+    // 1부터 100까지 출력
+    document.write("<h1>1부터 100까지 출력</h1>");
+    for (let i = 1; i <= 100; i++) {
+      document.write('<span style="font-size: 32px;">' + i + "&nbsp;</span>");
+    }
+    document.write("<hr/>");
+
+    // 10부터 1까지 출력
+    document.write("<h1>10부터 1까지 출력</h1>");
+    for (let i = 10; i >= 1; i--) {
+      document.write('<span style="font-size: 32px;">' + i + "&nbsp;</span>");
+    }
+    document.write("<hr/>");
+
+    // 0부터 10까지의 짝수만 출력
+    document.write("<h1>0부터 10까지의 짝수만 출력</h1>");
+    // for (let i = 0; i <= 10; i++) {
+    //   if (i % 2 == 0) {
+    //     document.write('<span style="font-size: 32px;">' + i + "&nbsp;</span>");
+    //   }
+    // }
+    for (let i = 0; i <= 10; i += 2) {
+      document.write('<span style="font-size: 32px;">' + i + "&nbsp;</span>");
+    }
+    document.write("<hr/>");
+
+    // 1부터 100까지 짝수의 합을 구해보세요.
+    document.write("<h1>1부터 100까지 짝수의 합</h1>");
+    let sum = 0;
+    for (let i = 0; i <= 100; i += 2) {
+      sum += i;
+    }
+    document.write('<span style="font-size: 32px;">' + sum + "&nbsp;</span>");
+    document.write("<hr/>");
+
+    // 별찍기
+    // *****
+    // *****
+    // *****
+    // *****
+    // *****
+    document.write("<h1>별찍기 직각사각형</h1>");
+    for (let i = 0; i < 5; i++) {
+      for (let j = 0; j < 5; j++) {
+        document.write("<span style='font-size: 32px;'>*</span>");
+      }
+      document.write("<br/>");
+    }
+    document.write("<hr/>");
+  </script>
+</html>

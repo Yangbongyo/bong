@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>별 만들기</title>
+  </head>
+  <body></body>
+  <script>
+    // 별찍기
+    for (let i = 0; i < 5; i++) {
+      for (let j = 0; j <= i; j++) {
+        document.write("<span style='font-size: 32px;'>*</span>");
+      }
+      document.write("<br/>");
+    }
+
+    for (let i = 0; i < 5; i++) {
+      for (let j = 4; j > i; j--) {
+        document.write("<span style='font-size: 32px;'>&nbsp</span>");
+      }
+      for (let k = 0; k <= i; k++) {
+        document.write("<span style='font-size: 32px;'>*</span>");
+      }
+      document.write("<br/>");
+    }
+
+    for (let i = 0; i < 5; i++) {
+      for (let j = 0; j > i; j++) {
+        document.write("<span style='font-size: 32px;'>*</span>");
+      }
+      for (let k = 0; k <= i; k--) {
+        document.write("<span style='font-size: 32px;'>&nbsp</span>");
+      }
+      document.write("<br/>");
+    }
+    document.write("<hr/>");
+
+    for (let i = 0; i < 5; i++) {
+      for (let j = 5; j > i; j--) {
+        document.write("<span style='font-size: 32px;'>&nbsp</span>");
+      }
+      for (let k = 0; k < i; k++) {
+        document.write("<span style='font-size: 32px;'>*</span>");
+      }
+      for (let l = 0; l < i; l++) {
+        document.write("<span style='font-size: 32px;'>*</span>");
+      }
+      document.write("<br/>");
+    }
+  </script>
+</html>
